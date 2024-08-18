@@ -7,7 +7,7 @@ _Note: This Mod Loader has been tested with **Grounded** and **Orcs Must Die! 3*
 ## Installation
 
 1. **Download the Mod Loader:**
-   - You can download the Mod Loader from [Nexus Mods](#) or from the [Releases section](https://github.com/your-repo/releases) on this repository.
+   - You can download the Mod Loader from [Nexus Mods](#) or from the [Releases section](https://github.com/samjviana/UE-Mod-Loader/releases) on this repository.
 
 2. **Extract the Mod Loader files:**
    - Extract the contents of the downloaded `.zip`.
