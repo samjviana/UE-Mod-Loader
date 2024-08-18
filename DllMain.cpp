@@ -1,5 +1,7 @@
 #include <windows.h>
 
+#include "ModLoader.h"
+
 #pragma comment(linker, "/export:ApplyCompatResolutionQuirking=C:\\Windows\\System32\\dxgi.dll.ApplyCompatResolutionQuirking")
 #pragma comment(linker, "/export:CompatString=C:\\Windows\\System32\\dxgi.dll.CompatString")
 #pragma comment(linker, "/export:CompatValue=C:\\Windows\\System32\\dxgi.dll.CompatValue")
@@ -22,6 +24,7 @@
 #pragma comment(linker, "/export:UpdateHMDEmulationStatus=C:\\Windows\\System32\\dxgi.dll.UpdateHMDEmulationStatus")
 
 DWORD WINAPI ModLoaderThread(LPVOID lpParam) {
+    ModLoader::LoadDlls();
     return S_OK;
 }
 
