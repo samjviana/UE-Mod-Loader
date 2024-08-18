@@ -21,9 +21,14 @@
 #pragma comment(linker, "/export:SetAppCompatStringPointer=C:\\Windows\\System32\\dxgi.dll.SetAppCompatStringPointer")
 #pragma comment(linker, "/export:UpdateHMDEmulationStatus=C:\\Windows\\System32\\dxgi.dll.UpdateHMDEmulationStatus")
 
+DWORD WINAPI ModLoaderThread(LPVOID lpParam) {
+    return S_OK;
+}
+
 BOOL WINAPI DllMain(HINSTANCE module, DWORD reason, LPVOID) {
     if (reason == DLL_PROCESS_ATTACH) {
-        MessageBoxA(nullptr, "Hello from DLL!", "UE Mod Loader", MB_OK | MB_ICONINFORMATION);
+        DisableThreadLibraryCalls(module);
+        CreateThread(0, 0, &ModLoaderThread, 0, 0, NULL);
     }
     return TRUE;
 }
