@@ -59,6 +59,15 @@ This will allow the Mod Loader to seamlessly load all `.dll` mods from the `mods
 ```
 </details>
 
+## TODO
+
+- Add a logging structure to the Mod Loader to ease future debugging.
+- Implement configuration options fot the Mod Loader (e.g., a `.ini` file):
+   - Customizable load order for specific mods
+   - Blocklist for specific mods (If the user don't want to delete the mod)
+- Explore the possibility of an interactive in-game overlay for mod management (GUI)
+   - _This is an idea I may not end up pursuing._
+
 ---
 #### _Credits_
 
