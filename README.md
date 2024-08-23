@@ -59,6 +59,10 @@ This will allow the Mod Loader to seamlessly load all `.dll` mods from the `mods
 ```
 </details>
 
+## LICENSE
+
+This project is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License - see the [LICENSE](LICENSE) file for details.
+
 ## TODO
 
 - Add a logging structure to the Mod Loader to ease future debugging.
